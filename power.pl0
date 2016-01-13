@@ -1,0 +1,23 @@
+var a,b,ans;
+procedure power;
+    begin
+        ans := 1;
+        repeat
+        ans := ans * a;
+        b := b-1
+        until b = 0
+    end;
+begin
+    read(a,b);
+    while b >= 0 do
+    begin
+        if b = 0 then
+        write(1)
+        else
+        begin
+            call power;
+            write(ans)
+        end;
+        read(a,b)
+    end
+end.
